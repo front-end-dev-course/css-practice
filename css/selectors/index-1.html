@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Relationships</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+
+      div {
+        border: 1px solid #333;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      /* Child Selector */
+      div > p {
+        color: blue;
+      }
+
+      /* Descendant Selector */
+      div p {
+        background-color: #eee;
+      }
+
+      /* Adjacent Sibling Selector */
+      h2 + p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Parent Element</h1>
+      <p>This is a paragraph inside the parent element.</p>
+
+      <!-- Child Element -->
+      <p>Child Element - Blue Text</p>
+
+      <!-- Descendant Element -->
+      <div>
+        <h2>Descendant Element</h2>
+        <p>This paragraph is a descendant of the parent element.</p>
+      </div>
+
+      <!-- Adjacent Sibling Elements -->
+      <h2>Adjacent Sibling Element</h2>
+      <p>This paragraph is an adjacent sibling of the h2 element.</p>
+    </div>
+  </body>
+</html>
